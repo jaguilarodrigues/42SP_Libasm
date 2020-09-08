@@ -6,7 +6,7 @@
 #    By: jaqrodri <jaqrodri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/01 18:57:54 by jaqrodri          #+#    #+#              #
-#    Updated: 2020/09/08 16:36:23 by jaqrodri         ###   ########.fr        #
+#    Updated: 2020/09/08 17:07:59 by jaqrodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -31,7 +31,7 @@ ${OBJ_DIR}/%.o	: ${SRC_DIR}/%.s
 	${ASM} ${ASM_FLAG} -o $@ $<
 
 $(NAME): $(OBJ)
-	ar rcs $@ $<
+	ar rcs $(NAME) $(OBJ)
 	ranlib ${NAME}
 
 all: $(NAME)
