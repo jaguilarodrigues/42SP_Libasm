@@ -6,7 +6,7 @@
 /*   By: jaqrodri <jaqrodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/02 01:45:54 by jaqrodri          #+#    #+#             */
-/*   Updated: 2020/09/08 16:41:47 by jaqrodri         ###   ########.fr       */
+/*   Updated: 2020/09/08 17:19:57 by jaqrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 
 void		ft_hello();
 size_t		ft_strlen(const char *s);
-// char		*ft_strcpy(char *dest, const char *src);
+char		*ft_strcpy(char *dest, const char *src);
 // int			ft_strcmp(const char *s1, const char *s2);
 // ssize_t		ft_write(int fd, const void *buf, size_t count);
 // ssize_t		ft_read(int fd, void *buf, size_t count);

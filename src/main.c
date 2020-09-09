@@ -6,7 +6,7 @@
 /*   By: jaqrodri <jaqrodri@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/09/02 01:57:42 by jaqrodri          #+#    #+#             */
-/*   Updated: 2020/09/08 16:44:22 by jaqrodri         ###   ########.fr       */
+/*   Updated: 2020/09/08 21:12:45 by jaqrodri         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@
 
 int	main()
 {
-	int a;
+	char a[4];
 	// ft_hello();
-	a = ft_strlen("teste");
-	printf("len: %d\n", a);
+	// printf("len: %d\n", ft_strlen("teste\n"));
+	printf("cpy: %s\n", ft_strcpy(a, "uva"));
 	return (1);
 }

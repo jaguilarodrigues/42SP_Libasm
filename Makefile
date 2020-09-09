@@ -6,7 +6,7 @@
 #    By: jaqrodri <jaqrodri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/01 18:57:54 by jaqrodri          #+#    #+#              #
-#    Updated: 2020/09/08 17:07:59 by jaqrodri         ###   ########.fr        #
+#    Updated: 2020/09/08 17:59:52 by jaqrodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,8 +20,8 @@ ASM 		=	nasm
 ASM_FLAG	=	-f elf64
 
 SRC_DIR		=	./src
-SRC			=	${SRC_DIR}/ft_hello.s \
-				${SRC_DIR}/ft_strlen.s
+SRC			=	${SRC_DIR}/ft_strlen.s \
+				${SRC_DIR}/ft_strcpy.s
 
 OBJ_DIR		=	./objects
 OBJ			=	$(patsubst ${SRC_DIR}/%.s, ${OBJ_DIR}/%.o, ${SRC})
