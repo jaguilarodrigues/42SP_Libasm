@@ -6,7 +6,7 @@
 #    By: jaqrodri <jaqrodri@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2020/09/01 18:57:54 by jaqrodri          #+#    #+#              #
-#    Updated: 2020/09/09 14:26:48 by jaqrodri         ###   ########.fr        #
+#    Updated: 2020/09/15 21:44:51 by jaqrodri         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,8 @@ ASM_FLAG	=	-f elf64
 SRC_DIR		=	./src
 SRC			=	${SRC_DIR}/ft_strlen.s \
 				${SRC_DIR}/ft_strcpy.s \
-				${SRC_DIR}/ft_strcmp.s
+				${SRC_DIR}/ft_strcmp.s \
+				${SRC_DIR}/ft_strdup.s
 
 OBJ_DIR		=	./objects
 OBJ			=	$(patsubst ${SRC_DIR}/%.s, ${OBJ_DIR}/%.o, ${SRC})
@@ -39,7 +40,7 @@ all: $(NAME)
 
 test: $(NAME) ${SRC_DIR}/main.c
 	@echo ======== TEST LIBASM ========
-	gcc -g -no-pie -Wall -Wextra -Werror ${SRC_DIR}/main.c ${NAME} -I ./include -o tester
+	gcc -g -no-pie -Wall -Wextra -Werror ${SRC_DIR}/main.c  -L. -lasm -I ./include -o tester
 
 clean:
 	rm -f $(OBJ)
