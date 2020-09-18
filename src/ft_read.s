@@ -1,9 +1,9 @@
 segment .text
-		global ft_write
+		global ft_read
 		extern __errno_location
 
-ft_write:
-		mv rax, 1               ; set rax to user func read
+ft_read:
+		mv rax, 0               ; set rax to user func read
 		syscall                 ; call system
 		cmp rax, 0              ; check error
 		jl error                ; go to error

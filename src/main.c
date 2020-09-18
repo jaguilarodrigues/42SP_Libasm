@@ -47,14 +47,42 @@ int	main()
 	// - Try ft_strcmp with 1 empty string as first argument
 	// - Try ft_strcmp with 1 empty string as second argument
 	// - Try ft_strcmp with multiple strings, equal or not, think about switching them
-	printf("ft_cmp:\t|%d|\n", ft_strcmp("uvaf", "uva"));
-	printf("cmp:\t|%d|\n", strcmp("uvaf", "uva"));
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("uvaf", "uva"));
+	// printf("cmp:\t|%d|\n", strcmp("uvaf", "uva"));
+	
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("uva", "uvaf"));
+	// printf("cmp:\t|%d|\n", strcmp("uva", "uvaf"));
+
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("uva", "uv"));
+	// printf("cmp:\t|%d|\n", strcmp("uva", "uv"));
+	
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("", ""));
+	// printf("cmp:\t|%d|\n", strcmp("", ""));
+	
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("", "uva"));
+	// printf("cmp:\t|%d|\n", strcmp("", "uva"));
+	
+	// printf("ft_cmp:\t|%d|\n", ft_strcmp("uvaf", ""));
+	// printf("cmp:\t|%d|\n", strcmp("uvaf", ""));
 
 	// ft_write
 	// - Try ft_write with the stdout
 	// - Try ft_write with an open file descriptor
 	// - Try ft_write with a wrong file descriptor
 	// - Check the return value
+
+	// printf("ft_write:\t|%s|\n", ft_write(1, "abc", 3));
+	// printf("write:\t|%s|\n", write(1, "abc", 3));
+	
+	// int fd;
+
+	// fd = open(test,  O_WRONLY | O_CREAT | O_APPEND, S_IRUSR | S_IWUSR );
+
+	// printf("ft_write:\t|%s|\n", ft_write(fd, "abc", 3));
+	// printf("write:\t|%s|\n", write(fd, "abc", 3));
+
+	// printf("ft_write:\t|%s|\n", ft_write(42, "abc", 3));
+	// printf("write:\t|%s|\n", write(42, "abc", 3));
 
 	/*
 	** ft_strdup
