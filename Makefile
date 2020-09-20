@@ -23,7 +23,9 @@ SRC_DIR		=	./src
 SRC			=	${SRC_DIR}/ft_strlen.s \
 				${SRC_DIR}/ft_strcpy.s \
 				${SRC_DIR}/ft_strcmp.s \
-				${SRC_DIR}/ft_strdup.s
+				${SRC_DIR}/ft_strdup.s \
+				${SRC_DIR}/ft_write.s \
+				${SRC_DIR}/ft_read.s
 
 OBJ_DIR		=	./objects
 OBJ			=	$(patsubst ${SRC_DIR}/%.s, ${OBJ_DIR}/%.o, ${SRC})

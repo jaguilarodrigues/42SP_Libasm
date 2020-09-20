@@ -3,7 +3,7 @@ segment .text
 		extern __errno_location
 
 ft_read:
-		mv rax, 0               ; set rax to user func read
+		mov rax, 0               ; set rax to user func read
 		syscall                 ; call system
 		cmp rax, 0              ; check error
 		jl error                ; go to error

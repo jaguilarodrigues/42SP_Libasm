@@ -21,6 +21,7 @@
 # include <stdlib.h>
 # include <ctype.h>
 # include <limits.h>
+# include <errno.h>
 
 # define BUFFER_SIZE 1024
 
